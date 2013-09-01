@@ -1,5 +1,6 @@
-.sass-cache/
-.coffeescript-cache/
+.sass-cache
+.coffeescript-cache
 fire_app_log.txt
+stylesheets/
 javascripts/*
 !javascripts/vendor
