@@ -1,0 +1,15 @@
+// Vertical Rhythm
+@include establish-baseline;
+
+// Base Styling
+
+body {
+  background: $bgColor;
+  color: $fontColor;
+}
+
+// Grid Container
+
+.container {
+  @include container;
+}

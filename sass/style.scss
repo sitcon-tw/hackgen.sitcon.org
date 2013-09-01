@@ -1,16 +1,27 @@
 // Vendor
 
 @import "vendor/normalize";
+@import "compass";
+@import "susy"; // Grid System
 
 // Settings
 
 @import "settings";
 
+/**
+ * Styling Rule
+ *
+ * Position > Container > Size > Color / Font > Misc
+ */
+
+// Web Fonts
+@import url("http://fonts.googleapis.com/css?family=Open+Sans");
+
+// Base
+@import "base";
+
 // Partial & Module
 
 // Layout
-
-body {
-  background: #1A1A1A;
-  color: #FFF;
-}
+@import "layout/header";
+@import "layout/navigation";
