@@ -11,7 +11,7 @@ Designer
 Contributing
 ---
 
-We hope everyone join this project, just fork it and send pull-request if anything you notice broken or you think this should be modify.
+We hope everyone joins this project! Just fork it and send pull-request if you noticed anything broken or improvable.
 
 License
 ---
