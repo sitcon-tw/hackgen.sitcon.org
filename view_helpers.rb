@@ -23,4 +23,8 @@ module ViewHelpers
     get_json('schedule.json')
   end
 
+  def staff
+    get_json('staff.json')
+  end
+
 end

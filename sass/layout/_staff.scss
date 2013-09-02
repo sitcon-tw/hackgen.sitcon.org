@@ -1,0 +1,28 @@
+/**
+ * Staff
+ */
+
+#staff {
+  .staff {
+    @include isolate-grid(4);
+
+    .role {
+      display: block;
+
+      padding: 1em;
+      @include rhythm(0.5, 0.5, 0.5, 0.5);
+
+      background: $primaryColor;
+      color: $bgColor;
+    }
+
+    .departement {
+      color: lighten($bgColor, 15%);
+      @include adjust-font-size-to(12px);
+    }
+
+    .name {
+      @include adjust-font-size-to(18px);
+    }
+  }
+}
