@@ -1,7 +1,7 @@
 define ['jquery'], ($)->
   class Navigation
     constructor: (allPages, pages)->
-      @menuItems = $("#main-menu a")
+      @menuItems = $("#site-menu a")
       @allPages = allPages
       @pages = pages
       @header = $("#header")
