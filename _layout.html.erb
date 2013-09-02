@@ -23,12 +23,12 @@
         <!-- Website Content -->
         <div id="wrapper">
           <header id="header" role="header" class="home"> <!-- Default make header is home -->
-            <h1 id="logo"><a href="#">Hack Generation</a></h1>
+            <h1 id="logo">Hack Generation</h1>
             <nav id="main-menu" roel="main-menu">
               <ul class="left">
                 <li id="apply-now"><a href="#">Apply Now</a>
               </ul>
-              <ul>
+              <ul id="site-menu">
                 <% pages.each do |item| %>
                   <li><a href="#<%= item[:id] %>" data-id="<%= item[:id] %>"><%= item[:name] %></a></li>
                 <% end %>
