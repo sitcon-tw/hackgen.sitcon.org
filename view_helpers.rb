@@ -15,4 +15,12 @@ module ViewHelpers
     ]
   end
 
+  def get_json(path)
+    d ||= JSON.parse(File.read(File.join(File.dirname(__FILE__), path)))
+  end
+
+  def schedule
+    get_json('schedule.json')
+  end
+
 end
