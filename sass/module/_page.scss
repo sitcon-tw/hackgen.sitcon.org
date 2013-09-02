@@ -31,3 +31,14 @@
 .text-centered {
   text-align: center;
 }
+
+// Comming Temp Style
+.comming {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+
+  h2 {
+    @include adjust-font-size-to(24px);
+    font-weight: normal;
+  }
+}
