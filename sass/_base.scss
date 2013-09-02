@@ -13,3 +13,7 @@ body {
 .container {
   @include container;
 }
+
+.page {
+  display: none;
+}
