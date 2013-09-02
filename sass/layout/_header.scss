@@ -3,12 +3,15 @@
  */
 
 #header {
-  @include clearfix;
+  position: absolute;
+  z-index: 100;
 
+  @include clearfix;
   width: 100%;
 
+  @include transition(0.3s ease-in-out);
+
   &.home {
-    position: absolute;
     top: 50%;
     margin-top: -3.5em;
 
