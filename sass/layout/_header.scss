@@ -5,6 +5,8 @@
 #header {
   @include clearfix;
 
+  width: 100%;
+
   &.home {
     position: absolute;
     top: 50%;

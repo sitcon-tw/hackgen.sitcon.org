@@ -11,7 +11,7 @@
 /**
  * Styling Rule
  *
- * Position > Container > Size > Color / Font > Misc
+ * Position > Container > Size > Color / Font > Animate >  Misc
  */
 
 // Web Fonts
@@ -20,8 +20,10 @@
 // Base
 @import "base";
 
-// Partial & Module
+// Module
+@import "module/page";
 
 // Layout
 @import "layout/header";
 @import "layout/navigation";
+@import "layout/content";

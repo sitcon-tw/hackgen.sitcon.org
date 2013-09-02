@@ -29,15 +29,13 @@
                 <li id="apply-now"><a href="#">Apply Now</a>
               </ul>
               <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Rules</a></li>
-                <li><a href="#">Schedule</a></li>
-                <li><a href="#">Sponsor</a></li>
-                <li><a href="#">Staff</a></li>
+                <% pages.each do |item| %>
+                  <li><a href="#<%= item[:id] %>" data-id="<%= item[:id] %>"><%= item[:name] %></a></li>
+                <% end %>
               </ul>
             </nav>
           </header>
-          <div id="content" role="content">
+          <div id="content" class="container" role="content">
             <%= yield %>
           </div>
         </div>
