@@ -6,6 +6,16 @@
 body {
   background: $bgColor;
   color: $fontColor;
+  font-family: "微軟正黑體","Microsoft JhengHei","STHeiti", "SimSun", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+// Elements
+
+hr {
+  width: 100%;
+
+  border: none;
+  border-top: 1px solid lighten($bgColor, 25%);
 }
 
 // Grid Container
