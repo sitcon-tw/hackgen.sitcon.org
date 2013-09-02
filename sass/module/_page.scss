@@ -4,6 +4,7 @@
 
 .page {
   height: 0;
+  overflow: hidden;
 
   @include opacity(0);
 
