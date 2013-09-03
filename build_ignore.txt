@@ -1,8 +1,8 @@
 schedule.json
 staff.json
-*/sass/*
-*/coffeescripts/*
-*/*.erb
+sass/*
+coffeescripts/*
+*.erb
 config.rb
 
 *.swp
