@@ -4,3 +4,4 @@ fire_app_log.txt
 stylesheets/
 javascripts/*
 !javascripts/vendor
+build/
