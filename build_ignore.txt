@@ -1,5 +1,9 @@
 schedule.json
 staff.json
+*/sass/*
+*/coffeescripts/*
+*/*.erb
+config.rb
 
 *.swp
 *.layout
