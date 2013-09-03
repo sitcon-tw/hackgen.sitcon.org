@@ -5,4 +5,26 @@ module ViewHelpers
     base_folder ||= "javascripts"
   end
 
+  def pages
+    [
+      {:name => 'About', :id => 'about'},
+      {:name => 'Rules', :id => 'rules'},
+      {:name => 'Schedule', :id => 'schedule'},
+      {:name => 'Sponsor', :id => 'sponsor'},
+      {:name => 'Staff', :id => 'staff'}
+    ]
+  end
+
+  def get_json(path)
+    d ||= JSON.parse(File.read(File.join(File.dirname(__FILE__), path)))
+  end
+
+  def schedule
+    get_json('schedule.json')
+  end
+
+  def staff
+    get_json('staff.json')
+  end
+
 end

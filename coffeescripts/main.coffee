@@ -10,5 +10,6 @@ require.config {
   }
 }
 
-require ['jquery', 'react'], ($, React)->
-  console.log 'Using jQuery Version: ' + $().jquery
+require ['app'], (App)->
+  app = new App
+  app.start()

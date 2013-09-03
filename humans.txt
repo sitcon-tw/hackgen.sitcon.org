@@ -3,13 +3,15 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    elct9620 (蒼時弦也) -- Team Leader -- elct9620
 
 # THANKS
 
-    <name>
+    RSChiang
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3
+    HTML5, CSS3, Ruby, CoffeeScript
     Normalize.css, jQuery, Modernizr
+    RequireJS, React
+    Fire.app
