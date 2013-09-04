@@ -27,4 +27,8 @@ module ViewHelpers
     get_json('staff.json')
   end
 
+  def sponsors
+    get_json('sponsor.json')
+  end
+
 end

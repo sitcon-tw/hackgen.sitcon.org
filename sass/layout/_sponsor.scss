@@ -1,0 +1,9 @@
+/**
+ * Sponsor
+ */
+
+#sponsor {
+  .sponsor {
+    @include isolate-grid(4);
+  }
+}
