@@ -4,7 +4,7 @@
 
 #schedule {
   h2 {
-    @include rhythm(1, 0.5, 0.5, 1);
+    @include rhythm(1, 0.5, 0.5, 0.25);
 
     background: $primaryColor;
     color: $bgColor;
@@ -21,24 +21,23 @@
   li {
     @include adjust-font-size-to(18px);
 
-    text-align: center;
-
     list-style: none;
   }
 
   .time {
     position: relative;
 
-    display: inline-block;
     padding: 1em;
+    margin-right: 1em;
     @include rhythm(0, 0.1, 0.1, 0.5);
 
-    background: darken($primaryColor, 15%);
+    background: $primaryColor;
     color: $bgColor;
 
     @include adjust-font-size-to(14px);
     font-family: "Open Sans", sans-serif;
 
+    /*
     &:after {
       position: absolute;
       top: 100%;
@@ -55,7 +54,11 @@
       border: 0.5em solid transparent;
       border-top: 0.5em solid darken($primaryColor, 15%);
     }
+    */
+  }
 
+  .item {
+    display: inline;
   }
 
 }

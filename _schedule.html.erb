@@ -1,3 +1,4 @@
+  <h2 class="hide">Schedule</h2>
   <% schedule.each do |day, task| %>
     <% column = day == "Day 1" ? "column-left" : "column-right" %>
     <article class="day <%= column %>">
@@ -6,7 +7,7 @@
       </header>
       <ol>
       <% task.each do |time, item| %>
-        <li><span class="time"><%= time %></span><div><%= item %></div></li>
+        <li><span class="time"><%= time %></span><div class="item"><%= item %></div></li>
       <% end %>
       <ol>
     </article>
