@@ -1,6 +1,9 @@
-<% staff.each do |staff| %>
-  <article class="staff">
-    <h3 class="role"><%= staff["role"] %><span class="departement"> / <%= staff["departement"] %></span></h3>
-    <p class="name"><%= staff["name"] %></p>
-  </article>
-<% end %>
+<h2 class="hide">Staff</h2>
+<div>
+  <% staff.each do |staff| %>
+    <article class="staff">
+      <h3 class="role"><%= staff["role"] %><span class="departement"> / <%= staff["departement"] %></span></h3>
+      <p class="name"><%= staff["name"] %></p>
+    </article>
+  <% end %>
+</div>
