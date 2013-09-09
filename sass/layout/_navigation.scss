@@ -70,7 +70,7 @@
   @include transition(1s ease-in-out);
 
   @include at-breakpoint($tablet) {
-    height: auto;
+    max-height: 999px;
     text-align: center;
 
     li {
