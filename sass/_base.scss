@@ -22,6 +22,14 @@ hr {
 
 .container {
   @include container;
+
+  @include at-breakpoint($tablet) {
+    @include container;
+  }
+
+  @include at-breakpoint($pc) {
+    @include container;
+  }
 }
 
 

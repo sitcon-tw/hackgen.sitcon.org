@@ -5,5 +5,13 @@
 #sponsor {
   .sponsor {
     @include isolate-grid(4);
+
+    @include at-breakpoint($tablet) {
+      @include isolate-grid(4);
+    }
+
+    @include at-breakpoint($pc) {
+      @include isolate-grid(4);
+    }
   }
 }

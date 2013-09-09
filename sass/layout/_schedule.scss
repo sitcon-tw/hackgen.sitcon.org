@@ -61,4 +61,20 @@
     display: inline;
   }
 
+  @include at-breakpoint($tablet) {
+    .column-left, .column-right {
+      @include span-columns(8);
+    }
+  }
+
+  @include at-breakpoint($pc) {
+    .column-left {
+      @include span-columns(6);
+    }
+
+    .column-right {
+      @include span-columns(6 omega);
+    }
+  }
+
 }

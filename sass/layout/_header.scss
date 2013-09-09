@@ -3,8 +3,6 @@
  */
 
 #header {
-  position: absolute;
-  z-index: 100;
 
   @include clearfix;
   width: 100%;
@@ -12,25 +10,42 @@
   @include transition(0.3s ease-in-out);
 
   &.home {
-    top: 50%;
-    margin-top: -3.5em;
+    margin-top: 3.5em;
+  }
 
-    width: 100%;
+  @include at-breakpoint($pc) {
+    position: absolute;
+    z-index: 100;
+
+    &.home {
+      top: 50%;
+      margin-top: -3.5em;
+
+      width: 100%;
+    }
   }
 }
 
 #logo {
 
-  float: right;
-  width: 35%;
-
   a {
     display: block;
     width: image-width("logo.png");
     height: image-height("logo.png");
-    margin-left: 1em;
+
+    margin: 0 auto;
 
     @include background(image-url("logo.png") no-repeat);
     @include hide-text;
+  }
+
+  @include at-breakpoint($pc) {
+    float: right;
+    width: 35%;
+
+    a {
+      margin: 0;
+      margin-left: 1em;
+    }
   }
 }
