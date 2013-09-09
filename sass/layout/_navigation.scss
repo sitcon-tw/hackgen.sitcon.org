@@ -64,7 +64,13 @@
 }
 
 #site-menu {
+  max-height: 0;
+  overflow: hidden;
+
+  @include transition(1s ease-in-out);
+
   @include at-breakpoint($tablet) {
+    height: auto;
     text-align: center;
 
     li {
@@ -101,5 +107,47 @@
 
   @include at-breakpoint($tablet) {
     float: clear;
+  }
+}
+
+#openmenu {
+
+  position: absolute;
+  top: -100%;
+  left: -100%;
+
+  & ~ label {
+    display: block;
+
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    text-align: center;
+    color: $bgColor;
+
+    @include rhythm(1, 0, 0, 1);
+  }
+
+  &:checked ~ label {
+    font-weight: bold;
+  }
+
+  &:checked ~ #site-menu {
+    max-height: 999px;
+  }
+
+  @include at-breakpoint($tablet) {
+    display: none;
+
+    & ~ label {
+      display: none;
+    }
+  }
+
+  @include at-breakpoint($pc) {
+    display: none;
+
+    & ~ label {
+      display: none;
+    }
   }
 }

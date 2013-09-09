@@ -29,6 +29,8 @@
               <ul class="left">
                 <li id="apply-now"><a href="#">Apply Now</a>
               </ul>
+              <input type="checkbox" name="openmenu" id="openmenu" />
+              <label for="openmenu">Menu</label>
               <ul id="site-menu">
                 <% pages.each do |item| %>
                   <li><a href="#<%= item[:id] %>" data-id="<%= item[:id] %>"><%= item[:name] %></a></li>
