@@ -7,6 +7,10 @@
     @include adjust-font-size-to(18px, 1.5, 14px);
   }
 
+  dd {
+    margin: 0;
+  }
+
   .time, .location {
     @include adjust-font-size-to(24px);
   }
