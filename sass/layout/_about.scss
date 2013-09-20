@@ -14,4 +14,34 @@
   .time, .location {
     @include adjust-font-size-to(24px);
   }
+
+  h2 {
+    @include rhythm(0.25, 0.25, 0.25, 0.25);
+
+    background: $primaryColor;
+    color: $bgColor;
+
+    font-weight: normal;
+    text-align: center;
+  }
+}
+
+#host {
+  .hosts {
+    text-align: center;
+
+    @include isolate-grid(4);
+
+    @include at-breakpoint($tablet) {
+      @include isolate-grid(4);
+    }
+
+    @include at-breakpoint($pc) {
+      @include isolate-grid(4);
+    }
+  }
+
+  img {
+    max-width: 100%;
+  }
 }

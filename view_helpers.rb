@@ -31,4 +31,8 @@ module ViewHelpers
     get_json('sponsor.json')
   end
 
+  def hosts
+    get_json('hosts.json')
+  end
+
 end
