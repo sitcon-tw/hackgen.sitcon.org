@@ -3,14 +3,15 @@
  */
 
 #schedule {
+
   h2 {
-    @include rhythm(1, 0.5, 0.5, 0.25);
+    @include rhythm(1, 0.25, 0.25, 0.25);
 
     background: $primaryColor;
     color: $bgColor;
 
     text-align: center;
-    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
   }
 
   ol {
@@ -19,23 +20,45 @@
   }
 
   li {
-    @include adjust-font-size-to(18px);
+    @include trailer(0.5);
+
+    @include adjust-font-size-to(16px);
 
     list-style: none;
+
+    &:hover {
+      background: lighten($bgColor, 5%);
+
+      @include transition(1s ease-out);
+
+      .time {
+        background: $primaryColor;
+        color: $bgColor;
+
+        @include transition(0.5s ease-out);
+      }
+    }
+  }
+
+  .location {
+    @include clearfix;
   }
 
   .time {
     position: relative;
 
+    display: inline-block;
     padding: 1em;
     margin-right: 1em;
-    @include rhythm(0, 0.1, 0.1, 0.5);
+    @include rhythm(0, 0.1, 0.1, 0);
 
-    background: $primaryColor;
-    color: $bgColor;
+    border: 1px solid $primaryColor;
+    // background: $primaryColor;
+    // color: $bgColor;
 
     @include adjust-font-size-to(14px);
     font-family: "Open Sans", sans-serif;
+    font-weight: lighter;
 
     /*
     &:after {
