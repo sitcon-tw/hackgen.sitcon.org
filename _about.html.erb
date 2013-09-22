@@ -33,6 +33,7 @@
   <% hosts.each do |host| %>
     <div class="hosts">
       <h3 class="hide"><%= host['name'] %></h3>
+      <span class="align-base"></span>
       <%= link_to(image_tag(host['logo'], :alt => host['name']), host['url'], :title => host['name'], :target => "_blank") %>
     </div>
   <% end %>
