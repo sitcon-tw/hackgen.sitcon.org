@@ -13,4 +13,7 @@ define ['jquery'], ($)->
       @header.removeClass('home')
       @pages[target].addClass('active')
 
+      if _gaq
+        _gaq.push(['_trackPageview', "/#{target}"])
+
       e.preventDefault()

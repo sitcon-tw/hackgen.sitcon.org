@@ -12,9 +12,11 @@ $base-font-size: 14px;
 $base-line-height: $base-font-size * 1.5;
 
 // Grid System
-$total-columns: 12;
+$total-columns: 4;
 $column-width: 4em;
 $gutter-width: 1em;
 $gutter-padding: $gutter-width;
 
-
+// RWD Settings
+$tablet: 45em 8;
+$pc: 75em 12;

@@ -1,4 +1,5 @@
-<div class="column-full">
+<h2 class="hide">About</h2>
+<section class="column-full">
   <p>
   在求學的過程中，可曾想過課堂所上的一切，究竟能發揮在哪？
   </p>
@@ -8,20 +9,43 @@
   <p>
   透過 HackGen，我們希望能夠讓各方學生們都能體會黑客松的樂趣，並促進跨校、跨領域學生的認識以及交流；甚至藉由作品分享，讓每位參賽的學生，都能見識先前可能從未接觸的技術，學以致用、教學相長。
   </p>
-</div>
-<hr class="column-full" />
-<div class="column-left text-centered">
-  <dl>
-    <dd class="time">Oct. 12-13</dd>
-    <dd class="location">政治大學 大仁樓</dd>
-  </dl>
-</div>
-<div class="column-right text-centered">
-  <dl>
-    <dd class="time">Oct. 19-20</dd>
-    <dd class="location">大同大學 尚志大樓</dd>
-  </dl>
-</div>
+</section>
+<section class="column-full">
+  <h2>Media</h2>
+  <div class="media youtube">
+    <iframe width="420" height="315" src="//www.youtube.com/embed/C6-Wne-eG-M?controls=2&modestbranding=1&theme=light&showinfo=0" frameborder="0" allowfullscreen></iframe>
+  </div>
+</section>
+<section class="column-full">
+  <h2>活動地點</h2>
+  <div class="container">
+    <div class="column-left text-centered">
+      <dl>
+        <dd class="time">Oct. 12-13</dd>
+        <dd class="location">政治大學 大仁樓</dd>
+      </dl>
+    </div>
+    <div class="column-right text-centered">
+      <dl>
+        <dd class="time">Oct. 19-20</dd>
+        <dd class="location">大同大學 尚志大樓</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+<section id="host" class="column-full">
+  <h2>主辦單位</h2>
+  <div class="container">
+  <% hosts.each do |host| %>
+    <div class="hosts">
+      <h3 class="hide"><%= host['name'] %></h3>
+      <span class="align-base"></span>
+      <%= link_to(image_tag(host['logo'], :alt => host['name']), host['url'], :title => host['name'], :target => "_blank") %>
+    </div>
+  <% end %>
+
+  </div>
+</section>
 <div class="column-full text-centered">
-  <a href="#" class="button large">Apply Now</a>
+  <a href="http://goo.gl/ZeVhVg" target="_blank" title="Apply Now" class="button large">Apply Now</a>
 </div>

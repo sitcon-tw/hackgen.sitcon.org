@@ -17,15 +17,39 @@
 }
 
 .column-full {
-  @include span-columns(12);
+  @include span-columns(4);
+
+  @include at-breakpoint($tablet) {
+    @include span-columns(8);
+  }
+
+  @include at-breakpoint($pc) {
+    @include span-columns(12);
+  }
 }
 
 .column-left {
-  @include span-columns(6);
+  @include span-columns(4);
+
+  @include at-breakpoint($tablet) {
+    @include span-columns(4);
+  }
+
+  @include at-breakpoint($pc) {
+    @include span-columns(6);
+  }
 }
 
 .column-right {
-  @include span-columns(6 omega);
+  @include span-columns(4);
+
+  @include at-breakpoint($tablet) {
+    @include span-columns(4 omega);
+  }
+
+  @include at-breakpoint($pc) {
+    @include span-columns(6 omega);
+  }
 }
 
 .text-centered {
@@ -41,4 +65,8 @@
     @include adjust-font-size-to(24px);
     font-weight: normal;
   }
+}
+
+.hide {
+  display: none;
 }

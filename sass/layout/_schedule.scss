@@ -3,14 +3,15 @@
  */
 
 #schedule {
+
   h2 {
-    @include rhythm(1, 0.5, 0.5, 1);
+    @include rhythm(1, 0.25, 0.25, 0.25);
 
     background: $primaryColor;
     color: $bgColor;
 
     text-align: center;
-    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
   }
 
   ol {
@@ -19,11 +20,28 @@
   }
 
   li {
-    @include adjust-font-size-to(18px);
+    @include trailer(0.5);
 
-    text-align: center;
+    @include adjust-font-size-to(16px);
 
     list-style: none;
+
+    &:hover {
+      background: lighten($bgColor, 5%);
+
+      @include transition(1s ease-out);
+
+      .time {
+        background: $primaryColor;
+        color: $bgColor;
+
+        @include transition(0.5s ease-out);
+      }
+    }
+  }
+
+  .location {
+    @include clearfix;
   }
 
   .time {
@@ -31,14 +49,18 @@
 
     display: inline-block;
     padding: 1em;
-    @include rhythm(0, 0.1, 0.1, 0.5);
+    margin-right: 1em;
+    @include rhythm(0, 0.1, 0.1, 0);
 
-    background: darken($primaryColor, 15%);
-    color: $bgColor;
+    border: 1px solid $primaryColor;
+    // background: $primaryColor;
+    // color: $bgColor;
 
     @include adjust-font-size-to(14px);
     font-family: "Open Sans", sans-serif;
+    font-weight: lighter;
 
+    /*
     &:after {
       position: absolute;
       top: 100%;
@@ -55,7 +77,27 @@
       border: 0.5em solid transparent;
       border-top: 0.5em solid darken($primaryColor, 15%);
     }
+    */
+  }
 
+  .item {
+    display: inline;
+  }
+
+  @include at-breakpoint($tablet) {
+    .column-left, .column-right {
+      @include span-columns(8);
+    }
+  }
+
+  @include at-breakpoint($pc) {
+    .column-left {
+      @include span-columns(6);
+    }
+
+    .column-right {
+      @include span-columns(6 omega);
+    }
   }
 
 }

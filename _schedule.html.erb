@@ -1,13 +1,19 @@
-  <% schedule.each do |day, task| %>
-    <% column = day == "Day 1" ? "column-left" : "column-right" %>
-    <article class="day <%= column %>">
-      <header>
-        <h2><%= day %></h2>
-      </header>
-      <ol>
-      <% task.each do |time, item| %>
-        <li><span class="time"><%= time %></span><div><%= item %></div></li>
-      <% end %>
-      <ol>
-    </article>
+  <h2 class="hide">Schedule</h2>
+  <% schedule.each do |location, days| %>
+    <section class="location">
+    <h2><%= location %></h2>
+    <% days.each do |day, task| %>
+      <% column = day == "Day 1" ? "column-left" : "column-right" %>
+      <article class="day <%= column %>">
+        <header>
+          <h3><%= day %></h3>
+        </header>
+        <ol>
+        <% task.each do |time, item| %>
+          <li><span class="time"><%= time %></span><div class="item"><%= item %></div></li>
+        <% end %>
+        <ol>
+      </article>
+    <% end %>
+  </section>
   <% end %>

@@ -3,16 +3,17 @@
  */
 
 #main-menu {
-  float: left;
-  width: 65%;
+  width: 100%;
   @include leader(2);
+
+  @include clearfix;
 
   background: $primaryColor;
 
   a {
     display: block;
 
-    padding: 0.5em;
+    padding: 1em;
     @include rhythm(0, 0.5, 0.5, 0);
 
     color: $navItemColor;
@@ -21,26 +22,59 @@
   }
 
   ul {
-    float: right;
     padding-left: 0;
-    padding-right: 1em;
     @include rhythm(0, 0, 0, 0);
 
     @include adjust-font-size-to(18px);
-    &.left {
-      float: left;
-    }
   }
 
   li {
-    float: left;
-
     text-transform: uppercase;
+    text-align: center;
     list-style: none;
 
     &:hover {
       background: lighten($primaryColor, 25%);
       @include transition(0.5s ease-in);
+    }
+  }
+
+  @include at-breakpoint($pc) {
+    float: left;
+    width: 65%;
+
+    a {
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+    }
+
+    ul {
+      float: right;
+      padding-right: 1em;
+
+      &.left {
+        float: left;
+      }
+    }
+
+    li {
+      float: left;
+    }
+  }
+}
+
+#site-menu {
+  max-height: 0;
+  overflow: hidden;
+
+  @include transition(1s ease-in-out);
+
+  @include at-breakpoint($tablet) {
+    max-height: 999px;
+    text-align: center;
+
+    li {
+      display: inline-block;
     }
   }
 }
@@ -62,12 +96,58 @@
     content: " ";
     border: 1.85em solid transparent;
     border-left: 2em solid $lightColor;
-    }
+  }
 
-    &:hover {
-      &:after {
-        border-left: 2em solid lighten($primaryColor, 25%);
-        @include transition(0.5s ease-in);
-      }
+  &:hover {
+    &:after {
+      border-left: 2em solid lighten($primaryColor, 25%);
+      @include transition(0.5s ease-in);
     }
+  }
+
+  @include at-breakpoint($tablet) {
+    float: clear;
+  }
+}
+
+#openmenu {
+
+  position: absolute;
+  top: -100%;
+  left: -100%;
+
+  & ~ label {
+    display: block;
+
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    text-align: center;
+    color: $bgColor;
+
+    @include rhythm(1, 0, 0, 1);
+  }
+
+  &:checked ~ label {
+    font-weight: bold;
+  }
+
+  &:checked ~ #site-menu {
+    max-height: 999px;
+  }
+
+  @include at-breakpoint($tablet) {
+    display: none;
+
+    & ~ label {
+      display: none;
+    }
+  }
+
+  @include at-breakpoint($pc) {
+    display: none;
+
+    & ~ label {
+      display: none;
+    }
+  }
 }
