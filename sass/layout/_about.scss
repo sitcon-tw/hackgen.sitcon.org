@@ -37,7 +37,7 @@
     @include isolate-grid(4);
 
     @include at-breakpoint($tablet) {
-      @include isolate-grid(4);
+      @include isolate-grid(8);
     }
 
     @include at-breakpoint($pc) {
