@@ -10,16 +10,6 @@
     "url": "http://www.openfoundry.org/"
   },
   {
-    "name": "政治大學",
-    "logo": "hosts/cs.nccu.png",
-    "url": "http://www.cs.nccu.edu.tw/"
-  },
-  {
-    "name": "教育部軟體人才培育計劃 & 社群網路運算與服務",
-    "logo": "hosts/itsa.png",
-    "url": "http://www.itsa.org.tw/"
-  },
-  {
     "name": "大同大學資訊工程學系",
     "logo": "hosts/ttu.png",
     "url": "http://www.cse.ttu.edu.tw/"

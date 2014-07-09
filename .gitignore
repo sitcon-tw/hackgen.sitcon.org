@@ -5,3 +5,4 @@ stylesheets/
 javascripts/*
 !javascripts/vendor
 build/
+.DS_Store

@@ -4,37 +4,16 @@
     "departement": "大同大學",
     "role": "總召"
   }, {
-    "name": "Daniel",
-    "departement": "台灣大學",
-    "role": "副召"
-  }, {
-    "name": "MouseMs",
-    "departement": "台灣科技大學",
-    "role": "副召"
-  }, {
-    "name": "Rifur",
-    "departement": "台灣科技大學",
-    "role": "場務"
-  }, {
-    "name": "Denny",
+    "name": "洋蔥",
     "departement": "大同大學",
-    "role": "線路"
-  }, {
-    "name": "Poka",
-    "departement": "台北商業技術學院",
-    "role": "線路"
-  }, {
-    "name": "資工平",
-    "departement": "勤益科技大學",
-    "role": "餐飲"
+    "role": "校內協辦人員"
+  },{
+    "name": "Elmer",
+    "departement": "大同大學",
+    "role": "場務"
   }, {
     "name": "蒼時弦也",
     "departement": "銘傳大學",
-    "role": "網站"
-  },
-  {
-    "name": "RSChiang",
-    "departement": "台灣大學",
-    "role": "行政"
+    "role": "文創"
   }
 ]

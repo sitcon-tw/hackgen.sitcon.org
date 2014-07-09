@@ -10,7 +10,6 @@ module ViewHelpers
       {:name => 'About', :id => 'about'},
       {:name => 'Rules', :id => 'rules'},
       {:name => 'Schedule', :id => 'schedule'},
-      {:name => 'Sponsor', :id => 'sponsor'},
       {:name => 'Staff', :id => 'staff'}
     ]
   end
