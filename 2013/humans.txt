@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    elct9620 (蒼時弦也) -- Team Leader -- elct9620
+
+# THANKS
+
+    RSChiang
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, Ruby, CoffeeScript
+    Normalize.css, jQuery, Modernizr
+    RequireJS, React
+    Fire.app
