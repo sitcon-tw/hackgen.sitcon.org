@@ -2,3 +2,4 @@
 .coffeescript-cache
 fire_app_log.txt
 build/
+images/.DS_Store
