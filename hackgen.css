@@ -268,8 +268,7 @@ a.button {
         #content .tb .title {
           width: 100%;
           float: none;
-          text-align: left;
-          padding-bottom: .8em; } }
+          text-align: left; } }
     #content .tb .info {
       width: 78%;
       float: right;
