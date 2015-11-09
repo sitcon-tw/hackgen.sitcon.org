@@ -317,3 +317,6 @@ a.button {
   opacity: 0; }
   .text.show {
     opacity: 1; }
+
+.stand {
+  height: 4em; }
